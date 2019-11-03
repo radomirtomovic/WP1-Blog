@@ -9,6 +9,7 @@ const CopyPlugin = require('copy-webpack-plugin');
 module.exports = {
   entry: {
     index: path.join(__dirname, 'src/ts/index.ts'),
+    contact:   path.join(__dirname, 'src/ts/contact.ts'),
   },
   output: {
     path: path.join(__dirname, 'dist'),
@@ -59,7 +60,7 @@ module.exports = {
       {
         test: /\.(jpeg|png|jpg|gif)$/,
         exclude: /node_modules/,
-        loader: 'url-loader?limit=1024&name=assets/images/[name].[ext]'
+        loader: 'url-loader?limit=1024&name=assets/img/[name].[ext]'
       }
     ]
   },
@@ -68,6 +69,8 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: '[name].css'
     }),
-    new CopyPlugin([{ from: './src/**/*.html', flatten: true }])
+    new CopyPlugin([{ from: './src/**/*.html', flatten: true }]),
+    new CopyPlugin([{ from: './img/**/*.png', flatten: false }]),
+    new CopyPlugin([{ from: './img/**/*.jpg', flatten: false }]),
   ]
 };

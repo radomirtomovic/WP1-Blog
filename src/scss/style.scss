@@ -1,0 +1,18 @@
+$fa-font-path:  "../../node_modules/@fortawesome/fontawesome-free/webfonts";
+@import "~@fortawesome/fontawesome-free/scss/brands.scss";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "~@fortawesome/fontawesome-free/scss/regular.scss";
+@import "~@fortawesome/fontawesome-free/scss/solid.scss";
+@import "~bootstrap/scss/bootstrap.scss";
+@import "theme/variables";
+@import "theme/mixins";
+@import "theme/reset";
+@import "theme/header";
+@import "theme/responsive";
+@import "theme/banner";
+@import "theme/home";
+@import "theme/blog";
+@import "theme/btn";
+@import "theme/contact";
+@import "theme/footer";
+

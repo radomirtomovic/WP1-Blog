@@ -1,3 +1,3 @@
-document.addEventListener('DOMContentLoaded', () => {
-    console.log('DOM has loaded');
-});
+import '../scss/style.scss';
+
+import $ from 'jquery';
